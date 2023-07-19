@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double salary, taxrate, tax, netsalary = 0;
+
+            Console.Write("Enter the salary:");
+            salary=double.Parse(Console.ReadLine());
+
+            Console.Write("Enter the tax rate:");
+            taxrate = double.Parse(Console.ReadLine());
+
+            tax=salary*taxrate;
+
+            netsalary = salary - tax;
+            Console.WriteLine("Salary after the tax:" + netsalary);
+            Console.ReadKey();
+        }
+    }
+}
