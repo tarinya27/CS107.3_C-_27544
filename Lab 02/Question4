@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2, sum = 0;
+
+            Console.Write("Enter first number:");
+            num1=int.Parse(Console.ReadLine());
+            Console.Write("Enter second number:");
+            num2 = int.Parse(Console.ReadLine());
+
+            sum=num1+ num2;
+            Console.WriteLine("Summation of inputs:" + sum);
+
+            Console.ReadKey();
+        }
+    }
+}
